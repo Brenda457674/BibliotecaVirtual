@@ -1,0 +1,307 @@
+body {
+    background: #f6f3ee;
+    color: #292524;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVBAR */
+
+.navbar-biblioteca {
+    background: #241711;
+    padding: 14px 0;
+}
+
+.navbar-brand strong {
+    font-size: 1.25rem;
+}
+
+.navbar-brand small {
+    opacity: .7;
+    font-size: .75rem;
+}
+
+.logo-instituto {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.logo-placeholder {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: white;
+    color: #6d4c41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+
+/* HERO */
+
+.hero-biblioteca {
+    background: linear-gradient(
+        135deg,
+        #3e2723,
+        #6d4c41
+    );
+
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-biblioteca h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.hero-biblioteca h1 span {
+    color: #e8c39e;
+}
+
+.hero-biblioteca p {
+    font-size: 1.15rem;
+    opacity: .85;
+    max-width: 600px;
+    margin: 25px 0;
+}
+
+.badge-biblioteca {
+    background: rgba(255,255,255,.15);
+    padding: 10px 16px;
+    border-radius: 50px;
+}
+
+.btn-biblioteca {
+    background: #d7a86e;
+    color: #241711;
+    border: none;
+    font-weight: 700;
+    padding: 12px 22px;
+}
+
+.btn-biblioteca:hover {
+    background: #e5bd8d;
+    color: #241711;
+}
+
+.hero-icon {
+    font-size: 180px;
+    opacity: .15;
+}
+
+
+/* BUSCADOR */
+
+.buscador {
+    position: relative;
+}
+
+.buscador i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8a7a70;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.buscador input {
+    border: none;
+    border-radius: 50px;
+    padding: 18px 25px 18px 55px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.08);
+}
+
+
+/* SECCIÓN */
+
+.seccion-pequena {
+    color: #8a6a52;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion {
+    font-weight: 800;
+    margin: 5px 0 0;
+}
+
+.contador-libros {
+    background: white;
+    padding: 10px 16px;
+    border-radius: 50px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+}
+
+
+/* TARJETAS */
+
+.libro-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,.07);
+    transition: .3s ease;
+}
+
+.libro-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.14);
+}
+
+
+/* PORTADA */
+
+.portada-container {
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    background: #eee;
+}
+
+.portada-libro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.libro-card:hover .portada-libro {
+    transform: scale(1.05);
+}
+
+.portada-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.35);
+    color: white;
+    font-size: 45px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.libro-card:hover .portada-overlay {
+    opacity: 1;
+}
+
+
+/* SIN IMAGEN */
+
+.sin-imagen {
+    height: 290px;
+    background: linear-gradient(
+        135deg,
+        #e7ded5,
+        #cbbdb1
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: #6d5a4d;
+    gap: 10px;
+}
+
+.sin-imagen i {
+    font-size: 65px;
+}
+
+
+/* INFORMACIÓN */
+
+.card-body {
+    padding: 20px;
+}
+
+.tipo-libro {
+    color: #9b7653;
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.card-title {
+    font-weight: 800;
+    margin: 8px 0 15px;
+}
+
+.dato-libro {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 8px 0;
+    color: #70645e;
+    font-size: .9rem;
+}
+
+.dato-libro i {
+    color: #8a6045;
+}
+
+
+/* FOOTER DE TARJETA */
+
+.card-footer {
+    background: white;
+    border-top: 1px solid #eee;
+    padding: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.btn-outline-biblioteca {
+    color: #6d4c41;
+    border-color: #6d4c41;
+    flex: 1;
+}
+
+.btn-outline-biblioteca:hover {
+    background: #6d4c41;
+    color: white;
+}
+
+
+/* FOOTER */
+
+.footer-biblioteca {
+    margin-top: 70px;
+    padding: 40px 0;
+    background: #241711;
+    color: white;
+}
+
+.footer-biblioteca p {
+    opacity: .7;
+}
+
+
+/* VACÍO */
+
+.empty-library {
+    padding: 80px 20px;
+}
+
+.empty-library i {
+    font-size: 70px;
+    color: #8a6a52;
+}
+
+.empty-library h3 {
+    margin-top: 20px;
+}
